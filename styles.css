@@ -729,3 +729,4 @@ button.gal-item:focus-visible{outline:2px solid var(--accent);outline-offset:3px
 .gal-layer.open .gal-close{opacity:1;transform:none}
 .gal-layer.closing .gal-close{opacity:0;transition-delay:0s}
 @media (max-width:560px){.gal-grid{columns:2;column-gap:10px}.gal-item{margin-bottom:10px;border-radius:10px}}
+.gal-item img{object-fit:cover}
