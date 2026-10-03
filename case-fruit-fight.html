@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fruit Fight — Olena Kaliuzhna</title>
+<meta name="description" content="A card game where real cards come alive on your phone. Case study by Olena Kaliuzhna, UI/UX & Product Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Onest:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('ok-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Olena Kaliuzhna</a>
+    <nav class="nav-links" aria-label="Sections"><a href="index.html#work">← All cases</a><a href="index.html#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="nav-actions">
+      <button class="btn ghost icon-btn theme-btn" id="theme" type="button" aria-label="Switch colour theme">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+      </button>
+      <button class="btn" type="button" data-cv><span class="cv-label">View</span> CV</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap">
+      <div class="crumbs mono"><a href="index.html#work">Cases</a><span>/</span><span>Fruit Fight</span></div>
+      <h1>A card game where real cards come alive on your phone</h1>
+      <p class="lede">Fruit Fight is a new Israeli card game: 52 creatures, each a cross between an animal and a fruit. You scan a printed card, it unlocks in the app, and you train it and send it into a real-time battle. I designed the whole app on my own: every screen, the visual system and the store listing.</p>
+      <div class="chips"><span class="chip">Mobile game</span><span class="chip">Solo designer</span><span class="chip">Hebrew RTL + English</span><span class="chip">Launching 2026</span></div>
+      <div class="facts"><div class="fact"><span class="mono">Role</span><b>Product &amp; UI Designer · sole designer</b></div><div class="fact"><span class="mono">Product</span><b>Fruit Fight · Israeli card game</b></div><div class="fact"><span class="mono">Timeline</span><b>2026 · launching now</b></div><div class="fact"><span class="mono">Platforms</span><b>iOS · Android soon · Hebrew &amp; English</b></div></div>
+      <div class="ext-links"><a class="btn store" href="https://apps.apple.com/il/app/id6764019851" target="_blank" rel="noopener" aria-label="Download Fruit Fight on App Store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M12 7.5v7M9 11.8l3 3 3-3"/><path d="M10.5 18.5h3"/></svg>App Store</a><span class="btn ghost store is-soon" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.8v16.4c0 .8.9 1.3 1.6.9l13-8.2c.6-.4.6-1.3 0-1.7l-13-8.2C6.9 2.5 6 3 6 3.8z"/></svg>Google Play · soon</span></div>
+    </div>
+  </section>
+
+  <section class="hero-cover">
+    <div class="wrap">
+      <!-- Hero image: set cover_img for this project in build.py -->
+      <div class="cover cover-img"><img src="images/fruit-fight-cover.jpg" alt="Fruit Fight: 52 creatures, each a cross between an animal and a fruit" width="2400" height="1350"></div>
+    </div>
+  </section>
+
+  <section style="border-top:0;padding-top:clamp(40px,6vw,72px)">
+    <div class="wrap">
+      <article class="chapter"><header><span class="mono">01</span><h2>Overview</h2></header>
+        <div class="prose">
+          <p><strong>Fruit Fight (in Hebrew, הפריצורים) is a card game that lives in two worlds.</strong> There are 52 creatures, each a cross between an animal and a fruit, printed on 208 collectible cards sold in shops across Israel. Scan a card with your phone and the creature comes alive in the app. There you train it from level 1 to 100 and send it into a real-time battle against a bot or a friend.</p>
+          <p>I was the only designer on the app. I designed every screen and flow, the visual system and the store listing, working directly with the product owner and the developer who built it.</p>
+          <div class="results results-2">
+            <div class="stat"><b>52</b><span>animal-and-fruit creatures</span></div>
+            <div class="stat"><b>208</b><span>printed cards to scan and collect</span></div>
+            <div class="stat"><b>13</b><span>special abilities that grow with training</span></div>
+            <div class="stat"><b>3</b><span>lanes in a real-time battle</span></div>
+          </div>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">02</span><h2>The challenge</h2></header>
+        <div class="prose">
+          <p>The players are young, and most of them have never seen a game like this. In the first minute they need to understand three things without reading a manual:</p>
+          <ul>
+            <li><strong>Real cards unlock creatures.</strong> You scan a physical card, and it becomes a creature on your phone.</li>
+            <li><strong>Creatures get stronger.</strong> Training raises attack and defence, and each creature's ability grows tier by tier.</li>
+            <li><strong>Battles are simple and fast.</strong> Drag a card onto one of three lanes and break the enemy castle.</li>
+          </ul>
+          <p>All of this had to work in Hebrew, right to left, with an English version mirrored from it. It also had to follow strict store rules: the game is fully playable without cards, and nothing may suggest you have to buy cards to play.</p>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">03</span><h2>My role</h2></header>
+        <div class="prose">
+          <ul>
+            <li><strong>The whole app.</strong> Home, battle hub, team picker, VS intro, battle arena, results, powers guide, creature pop-up, achievements, the "My Cards" album, the training camp and each creature's level ladder.</li>
+            <li><strong>Visual system.</strong> Dark panels, yellow accents, a colour for each creature group (attackers, defenders, balanced, wizard), purple level badges, and greyscale for anything you don't have yet.</li>
+            <li><strong>Scanning and collecting.</strong> I designed the album like a real sticker album: every one of the 208 cards has a fixed place. Missing cards stay in black and white, so you can see exactly what's left to find.</li>
+            <li><strong>Store listing.</strong> App Store and Google Play screenshots in Hebrew and English.</li>
+            <li><strong>Hand-off.</strong> Figma frames with every state, in RTL, ready for the developer.</li>
+          </ul>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">04</span><h2>Process</h2></header>
+        <div class="prose">
+          <h3 class="sub">Three iterations of one question: how do you hold the phone?</h3>
+          <ol class="flow flow-3">
+            <li><b>Horizontal</b><span>Everything in landscape. Great for battle, awkward for menus and the album.</span></li>
+            <li><b>Vertical</b><span>Everything in portrait. Easy one-handed, but the three lanes no longer fit.</span></li>
+            <li><b>Mixed</b><span>Menus and cards in portrait, battle in landscape, with a friendly "rotate your phone" screen in between.</span></li>
+          </ol>
+          <p>The final version gives each task the orientation that suits it. Collecting and training happen with one hand. The battle turns sideways so all three lanes and both castles are on screen at once.</p>
+          <figure class="shot wide">
+            <img src="images/fruit-fight-orientation.jpg" alt="Portrait battle hub, a rotate-your-phone screen, then the landscape battle arena" loading="lazy" width="2400" height="1100">
+            <figcaption>Portrait hub → "Rotate your phone!" → landscape arena with three lanes.</figcaption>
+          </figure>
+        </div></article>
+
+      <article class="chapter full"><header><span class="mono">05</span><h2>Solution</h2></header>
+        <div class="prose">
+          <p>The whole game in six steps, the way a new player meets it: scan, build a team, get to know your creatures, train them and fight. Every screen shows rather than tells: big creature art, a few words and one clear action.</p>
+          <p>These six images are also the store screenshots I designed for the App Store and Google Play, in English and Hebrew.</p>
+          <div class="shots">
+          <figure class="shot wide">
+            <img src="images/fruit-fight-scan.jpg" alt="Scan a real card: Fruit Fight screen" loading="lazy" width="2000" height="924">
+            <figcaption><strong>Scan a real card.</strong> Point the camera at the QR code on a printed card, and the creature joins your game.</figcaption>
+          </figure>
+          <figure class="shot wide">
+            <img src="images/fruit-fight-team.jpg" alt="Build your team: Fruit Fight screen" loading="lazy" width="2000" height="924">
+            <figcaption><strong>Build your team.</strong> Pick eight creatures from attackers, defenders and balanced. Cards you haven't scanned yet stay in black and white.</figcaption>
+          </figure>
+          <figure class="shot wide">
+            <img src="images/fruit-fight-creature.jpg" alt="Each creature is different: Fruit Fight screen" loading="lazy" width="2000" height="924">
+            <figcaption><strong>Each creature is different.</strong> Its own attack, defence and ability. Training shows exactly what the next level adds.</figcaption>
+          </figure>
+          <figure class="shot wide">
+            <img src="images/fruit-fight-train.jpg" alt="Train from level 1 to 100: Fruit Fight screen" loading="lazy" width="2000" height="924">
+            <figcaption><strong>Train from level 1 to 100.</strong> The evolution ladder: 11 versions of every creature, with the next one always in sight.</figcaption>
+          </figure>
+          <figure class="shot wide">
+            <img src="images/fruit-fight-battle.jpg" alt="Real-time battle on three lanes: Fruit Fight screen" loading="lazy" width="2000" height="924">
+            <figcaption><strong>Real-time battle on three lanes.</strong> Drag a card onto a lane and break the enemy castle before the timer runs out.</figcaption>
+          </figure>
+          <figure class="shot wide">
+            <img src="images/fruit-fight-friend.jpg" alt="Battle a friend: Fruit Fight screen" loading="lazy" width="2000" height="924">
+            <figcaption><strong>Battle a friend.</strong> Share a room code and play head to head.</figcaption>
+          </figure>
+          </div>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">06</span><h2>Launch</h2></header>
+        <div class="prose">
+          <p><strong>Fruit Fight is going out into the world right now.</strong> The app is already live on the App Store in Israel and is coming soon to Google Play. The printed cards reach shops in October 2026. The game launches first for the Israeli market in Hebrew, with an English version ready too.</p>
+          <ol class="timeline">
+            <li><span class="mono">2026</span><b>Design of the full app</b><span>Every screen, flow and state, Hebrew and English.</span></li>
+            <li><span class="mono">Now</span><b>Live on the App Store</b><span>Available in Israel.</span></li>
+            <li><span class="mono">Oct 2026</span><b>Cards in shops</b><span>208 printed cards ready to scan.</span></li>
+            <li><span class="mono">Soon</span><b>Google Play</b><span>The Android version is on its way.</span></li>
+          </ol>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">07</span><h2>What I learned</h2></header>
+        <div class="prose">
+          <p><strong>Show, don't explain.</strong> When players don't read long text, the picture has to carry the rule: colour means yours, black and white means still to find.</p>
+          <p><strong>Orientation is a design decision.</strong> It took three versions to see that the answer wasn't "landscape" or "portrait" but the right one for each task.</p>
+          <p><strong>Designing in a language I don't read.</strong> Working in Hebrew RTL taught me to build layouts that mirror cleanly and to check every text with native speakers before release.</p>
+        </div></article>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0;border-top:0">
+    <div class="wrap">
+      <a class="next" href="case-novakivsky.html">
+        <div><span class="eyebrow">Next case</span><h3>Ukraine&#x27;s Van Gogh, given the website his paintings deserve</h3></div>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact slim">
+    <div class="ballpit" data-ballpit aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2>Have a complex product? Let's talk.</h2>
+      <div class="mail-row">
+        <span class="mail" id="mail">kaliuzhna.designer@gmail.com</span>
+        <button class="btn" id="copy" type="button">Copy email</button>
+        <span class="toast mono" id="toast" aria-live="polite"></span>
+      </div>
+      <div class="socials">
+        <a class="btn ghost" href="https://t.me/kaliuzhnaolena" target="_blank" rel="noopener">Telegram ↗</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/kaliuzhnaolena/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="https://www.behance.net/kaliuzhnaolena" target="_blank" rel="noopener">Behance ↗</a>
+        <a class="btn ghost" href="https://dribbble.com/Kaliuzhna" target="_blank" rel="noopener">Dribbble ↗</a>
+        <button class="btn ghost" type="button" data-cv>View CV</button>
+      </div>
+      <div class="foot mono"><span>© 2026 Olena Kaliuzhna</span><a href="index.html" style="text-decoration:none">← Back to portfolio</a></div>
+    </div>
+  </section>
+</main>
+<div class="cv-view" id="cv-view" role="dialog" aria-modal="true" aria-label="CV of Olena Kaliuzhna" hidden>
+  <div class="cv-panel">
+    <div class="cv-bar">
+      <span class="mono">CV · Olena Kaliuzhna · UI/UX Designer</span>
+      <a class="btn ghost" href="cv.pdf" download="Olena_Kaliuzhna_CV.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <button class="btn icon-btn" type="button" id="cv-close" aria-label="Close CV">✕</button>
+    </div>
+    <div class="cv-scroll"><img src="cv.jpg" alt="CV of Olena Kaliuzhna, UI/UX Designer: contacts, skills, experience, education" loading="lazy" width="1500" height="2516"></div>
+  </div>
+</div>
+<script src="confetti.js"></script>
+<script src="main.js"></script>
+<script src="ballpit.js" defer></script>
+</body>
+</html>

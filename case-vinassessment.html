@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VinAssessment — Olena Kaliuzhna</title>
+<meta name="description" content="One designer, three automotive products and a Chrome extension. Case study by Olena Kaliuzhna, UI/UX & Product Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Onest:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('ok-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Olena Kaliuzhna</a>
+    <nav class="nav-links" aria-label="Sections"><a href="index.html#work">← All cases</a><a href="index.html#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="nav-actions">
+      <button class="btn ghost icon-btn theme-btn" id="theme" type="button" aria-label="Switch colour theme">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+      </button>
+      <button class="btn" type="button" data-cv><span class="cv-label">View</span> CV</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap">
+      <div class="crumbs mono"><a href="index.html#work">Cases</a><span>/</span><span>VinAssessment</span></div>
+      <h1>One designer, three automotive products and a Chrome extension</h1>
+      <p class="lede">VinAssessment turns raw vehicle history into reports that car dealers can read in seconds. Around it grew two consumer products: VehiSales, a marketplace for used cars, and VehiLeaks, vehicle history reports for buyers. I designed all three, plus the Chrome extension that brings a report onto any car listing.</p>
+      <div class="chips"><span class="chip">SaaS</span><span class="chip">Chrome extension</span><span class="chip">B2B &amp; B2C</span><span class="chip">Dashboard</span></div>
+      <div class="facts"><div class="fact"><span class="mono">Role</span><b>UI/UX Designer · contract</b></div><div class="fact"><span class="mono">Product</span><b>Automotive SaaS · USA</b></div><div class="fact"><span class="mono">Timeline</span><b>May 2024 — Nov 2024</b></div><div class="fact"><span class="mono">Scope</span><b>3 products · Chrome extension · 1440 / 768 / 390</b></div></div>
+      <div class="ext-links"><a class="btn" href="https://vinassessment.com/" target="_blank" rel="noopener">VinAssessment ↗</a><a class="btn ghost" href="https://vehisales.com/" target="_blank" rel="noopener">VehiSales ↗</a><a class="btn ghost" href="https://vehileaks.com/" target="_blank" rel="noopener">VehiLeaks ↗</a><a class="btn ghost" href="https://chromewebstore.google.com/detail/vehileaks-check-vehicle-h/bbedgdimcgbhpjdpeichjklibodpbabp" target="_blank" rel="noopener">Chrome extension ↗</a></div>
+    </div>
+  </section>
+
+  <section class="hero-cover">
+    <div class="wrap">
+      <!-- Hero image: set cover_img for this project in build.py -->
+      <div class="cover cover-img"><img src="images/vin-cover.jpg" alt="VinAssessment dealer dashboard on a laptop" width="2400" height="1350" style="object-position:center top"></div>
+    </div>
+  </section>
+
+  <section style="border-top:0;padding-top:clamp(40px,6vw,72px)">
+    <div class="wrap">
+      <article class="chapter"><header><span class="mono">01</span><h2>Overview</h2></header>
+        <div class="prose">
+          <p><strong>Buying a used car is a bet on its past.</strong> Was it in an accident? Sold at auction? How many owners? VinAssessment collects that history by VIN and turns it into a report a dealer can read in seconds: auction photos, title records, previous owners, listing and price history.</p>
+          <p>I joined as the designer and ended up shaping a small ecosystem. One platform for dealers, two products for car buyers, and a Chrome extension that connects them all.</p>
+          <div class="eco eco-3">
+            <a href="https://vinassessment.com/" target="_blank" rel="noopener"><span class="mono">B2B · dealers</span><b>VinAssessment ↗</b><span>Vehicle history reports, window stickers and a dealer dashboard.</span></a>
+            <a href="https://vehisales.com/" target="_blank" rel="noopener"><span class="mono">B2C · buyers</span><b>VehiSales ↗</b><span>A marketplace to browse and compare used cars across the US.</span></a>
+            <a href="https://vehileaks.com/" target="_blank" rel="noopener"><span class="mono">B2C · buyers</span><b>VehiLeaks ↗</b><span>Vehicle history reports for buyers, with a Chrome extension.</span></a>
+          </div>
+          <figure class="shot wide">
+            <img src="images/vin-about.jpg" alt="About the project: VinAssessment, research, UX/UI design, SaaS, 2024" loading="lazy" width="2000" height="1401">
+          </figure>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">02</span><h2>The challenge</h2></header>
+        <div class="prose">
+          <p>Vehicle history data is huge and messy: millions of records, auction photos, title brands, odometer readings. Dealers don't have time to dig through it. They need an answer at a glance: <strong>is this car a good deal, or a risk?</strong></p>
+          <ul>
+            <li>Turn complex data into reports people can scan, not study.</li>
+            <li>Give dealers one place for reports, window stickers and their own sales statistics.</li>
+            <li>Keep three products with different audiences visually related, so each one builds trust in the others.</li>
+          </ul>
+          <figure class="shot wide">
+            <img src="images/vin-task.jpg" alt="Project goals and description; 348+ hours, 126+ screens, 329+ components" loading="lazy" width="2000" height="1240">
+          </figure>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">03</span><h2>My role</h2></header>
+        <div class="prose">
+          <ul>
+            <li><strong>Research and structure.</strong> Mapped what dealers and buyers need from a report and built the site architecture: main page, vehicle report, window sticker, Chrome extension, marketing services, development solutions, about and contacts.</li>
+            <li><strong>Three products.</strong> Designed VinAssessment, VehiSales and VehiLeaks from wireframes to final UI.</li>
+            <li><strong>Dealer dashboard.</strong> VIN search, window stickers, sales insights, plan and billing.</li>
+            <li><strong>Chrome extension.</strong> The report inside the listing, on the sites dealers already use.</li>
+            <li><strong>Design system and hand-off.</strong> Components, responsive grids for 1440, 768 and 390 px, prototypes, user testing and close work with developers.</li>
+          </ul>
+          <div class="results">
+            <div class="stat"><b>348+</b><span>hours of design work</span></div>
+            <div class="stat"><b>126+</b><span>screens</span></div>
+            <div class="stat"><b>329+</b><span>components in the design system</span></div>
+          </div>
+        </div></article>
+
+      <article class="chapter full"><header><span class="mono">04</span><h2>VinAssessment</h2></header>
+        <div class="prose">
+          <p>The main platform for dealers. The website explains what's in a report and sells plans; the dashboard is where dealers work every day.</p>
+          <div class="shots">
+            <figure class="shot wide">
+              <img src="images/vin-sitemap.jpg" alt="Site map and responsive grids for 1440, 768 and 390 px" loading="lazy" width="2000" height="2040">
+              <figcaption><strong>Structure first.</strong> Eight main sections and one grid system across desktop, tablet and mobile.</figcaption>
+            </figure>
+            <figure class="shot wide">
+              <img src="images/vin-dashboard.jpg" alt="Dealer statistics dashboard" loading="lazy" width="2000" height="1500">
+              <figcaption><strong>Dealer dashboard.</strong> Inventory, sales and profit at a glance, with VIN search and window stickers one click away.</figcaption>
+            </figure>
+            <figure class="shot wide">
+              <img src="images/vin-mobile.jpg" alt="Main page on mobile: report, pricing, window sticker and Chrome extension sections" loading="lazy" width="2000" height="1839">
+              <figcaption><strong>Mobile, 390 px.</strong> The report contents, plans, window sticker and the extension, each in a thumb-sized section.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/vin-marketing.jpg" alt="Marketing services and Chrome extension pages on mobile" loading="lazy" width="2000" height="1500">
+              <figcaption><strong>Services pages.</strong> Marketing and development services for dealers.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/vin-505.jpg" alt="Error page with a car on bricks" loading="lazy" width="2000" height="1500">
+              <figcaption><strong>Even errors.</strong> Friendly 404 and 505 pages that lead people back.</figcaption>
+            </figure>
+          </div>
+          <div class="todo">Screens from the VinAssessment app itself: the vehicle report, VIN search, window sticker.</div>
+        </div></article>
+
+      <article class="chapter full"><header><span class="mono">05</span><h2>Chrome extension</h2></header>
+        <div class="prose">
+          <div class="spot">
+            <div class="spot-text">
+              <span class="mono">The feature dealers asked for</span>
+              <h3>A car's history, right on the listing</h3>
+              <p>Dealers browse Craigslist, Autotrader, Cars.com and CarMax all day. Copying a VIN into another tab for every car was slow. The extension puts the report next to the listing, without leaving the page.</p>
+              <ol class="flow flow-3">
+                <li><b>Open any listing</b><span>on a car site</span></li>
+                <li><b>Click the extension</b><span>it reads the VIN</span></li>
+                <li><b>See the history</b><span>photos, auctions, title, price</span></li>
+              </ol>
+              <div class="chips"><span class="chip">Craigslist</span><span class="chip">Autotrader</span><span class="chip">Cars.com</span><span class="chip">CarMax</span></div>
+              <a class="btn" href="https://chromewebstore.google.com/detail/vehileaks-check-vehicle-h/bbedgdimcgbhpjdpeichjklibodpbabp" target="_blank" rel="noopener">See it in the Chrome Web Store ↗</a>
+            </div>
+            <img src="images/vin-extension.jpg" alt="Chrome extension page with the report panel over a car listing" loading="lazy" width="2000" height="1500">
+          </div>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">06</span><h2>VehiSales</h2></header>
+        <div class="prose">
+          <p>A marketplace for car buyers, powered by VinAssessment data. Browse new and used cars across the US, filter by price, mileage, make and body type, see them on a map, save favourites and set price alerts.</p>
+          <div class="todo">VehiSales screens: search results, filters, map view, car page.</div>
+          <a class="more-link" href="https://vehisales.com/" target="_blank" rel="noopener">vehisales.com ↗</a>
+        </div></article>
+
+      <article class="chapter full"><header><span class="mono">07</span><h2>VehiLeaks</h2></header>
+        <div class="prose">
+          <p><strong>VehiLeaks helps dealers and private buyers check a car's data, history and specs in seconds, by VIN or license plate.</strong> I owned the product end to end: UX, the user dashboard, the admin panel and the data-heavy UI behind every report.</p>
+          <p>The main problem we set out to solve: people struggle to find a reliable, fast and clear way to verify VIN data and avoid hidden damage.</p>
+          <div class="shots">
+            <figure class="shot wide">
+              <img src="images/vl-title.jpg" alt="VehiLeaks car report on a desktop screen" loading="lazy" width="2000" height="1500">
+              <figcaption><strong>VehiLeaks.</strong> SaaS platform, dashboard, UI/UX.</figcaption>
+            </figure>
+            <figure class="shot wide">
+              <img src="images/vl-about.jpg" alt="About VehiLeaks: automotive SaaS for dealers and individual users" loading="lazy" width="2000" height="1664">
+              <figcaption><strong>About.</strong> A high-speed, decision-driven product: users need clear answers in seconds.</figcaption>
+            </figure>
+          </div>
+          <h3 class="sub">Research</h3>
+          <p>I worked through the Double Diamond: market analysis and user research, personas and product hypotheses, then prototyping, testing, final UI and a design system. A competitor analysis of 10 VIN services across 11 features showed four things:</p>
+          <ol class="insights">
+            <li><b>Generic reports dominate.</b> Legacy players rely on brand recognition, not product experience.</li>
+            <li><b>Dealer workflows are underserved.</b> Dealers are high-value users, yet lack tools that fit their daily browsing.</li>
+            <li><b>Browser extensions are rare.</b> Almost no one offers one, so it became our biggest opportunity.</li>
+            <li><b>Brand over experience.</b> Competitors invest little in modern UX, which left room to win on clarity.</li>
+          </ol>
+          <div class="shots">
+            <figure class="shot wide">
+              <img src="images/vl-research.jpg" alt="UX research: dealer persona and the single VIN search on mobile" loading="lazy" width="2000" height="2281">
+              <figcaption><strong>UX research.</strong> Competitor analysis and product hypotheses, tested on the core flow: single VIN search on mobile.</figcaption>
+            </figure>
+          </div>
+          <h3 class="sub">Solution</h3>
+          <p>A single dashboard for both audiences. Search one VIN or a whole group, open a report with auction and listing photos side by side, and track sales for a dealership.</p>
+          <div class="shots">
+            <figure class="shot wide">
+              <img src="images/vl-report.jpg" alt="Car report comparing auction damage photos with listing photos" loading="lazy" width="2000" height="1463">
+              <figcaption><strong>Car report.</strong> Auction photos next to the listing photos, so hidden damage is impossible to miss. Share, print or export to PDF.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/vl-multivin.jpg" alt="Multi-car search and history reports" loading="lazy" width="2000" height="1500">
+              <figcaption><strong>Multi-VIN search.</strong> Paste many VINs at once and get a history table for the whole lot.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/vl-dashboard.jpg" alt="Dealer statistics dashboard with inventory chart" loading="lazy" width="2000" height="1481">
+              <figcaption><strong>Dealer statistics.</strong> Inventory, sales and profit, new vs used, by month.</figcaption>
+            </figure>
+          </div>
+          <a class="more-link" href="https://vehileaks.com/" target="_blank" rel="noopener">vehileaks.com ↗</a>
+        </div></article>
+
+      <article class="chapter"><header><span class="mono">08</span><h2>What I learned</h2></header>
+        <div class="prose">
+          <p><strong>Data needs a story.</strong> The same records feel overwhelming in a table and obvious in a well-ordered report.</p>
+          <p><strong>Meet people where they already are.</strong> The extension worked because it didn't ask dealers to change how they browse.</p>
+          <p><strong>Systems scale products.</strong> One set of components let three products ship faster and still feel related.</p>
+        </div></article>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0;border-top:0">
+    <div class="wrap">
+      <a class="next" href="case-fruit-fight.html">
+        <div><span class="eyebrow">Next case</span><h3>A card game where real cards come alive on your phone</h3></div>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact slim">
+    <div class="ballpit" data-ballpit aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2>Have a complex product? Let's talk.</h2>
+      <div class="mail-row">
+        <span class="mail" id="mail">kaliuzhna.designer@gmail.com</span>
+        <button class="btn" id="copy" type="button">Copy email</button>
+        <span class="toast mono" id="toast" aria-live="polite"></span>
+      </div>
+      <div class="socials">
+        <a class="btn ghost" href="https://t.me/kaliuzhnaolena" target="_blank" rel="noopener">Telegram ↗</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/kaliuzhnaolena/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn ghost" href="https://www.behance.net/kaliuzhnaolena" target="_blank" rel="noopener">Behance ↗</a>
+        <a class="btn ghost" href="https://dribbble.com/Kaliuzhna" target="_blank" rel="noopener">Dribbble ↗</a>
+        <button class="btn ghost" type="button" data-cv>View CV</button>
+      </div>
+      <div class="foot mono"><span>© 2026 Olena Kaliuzhna</span><a href="index.html" style="text-decoration:none">← Back to portfolio</a></div>
+    </div>
+  </section>
+</main>
+<div class="cv-view" id="cv-view" role="dialog" aria-modal="true" aria-label="CV of Olena Kaliuzhna" hidden>
+  <div class="cv-panel">
+    <div class="cv-bar">
+      <span class="mono">CV · Olena Kaliuzhna · UI/UX Designer</span>
+      <a class="btn ghost" href="cv.pdf" download="Olena_Kaliuzhna_CV.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <button class="btn icon-btn" type="button" id="cv-close" aria-label="Close CV">✕</button>
+    </div>
+    <div class="cv-scroll"><img src="cv.jpg" alt="CV of Olena Kaliuzhna, UI/UX Designer: contacts, skills, experience, education" loading="lazy" width="1500" height="2516"></div>
+  </div>
+</div>
+<script src="confetti.js"></script>
+<script src="main.js"></script>
+<script src="ballpit.js" defer></script>
+</body>
+</html>
