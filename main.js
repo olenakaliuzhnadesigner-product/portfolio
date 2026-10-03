@@ -69,14 +69,13 @@
     flipTitle.addEventListener('touchstart',flip,{passive:true});
   }
 
-  /* skills: cards rise in on scroll, chips cascade */
-  var skCards=document.querySelectorAll('.sk-card');
-  if(skCards.length&&!reduce&&'IntersectionObserver' in window){
-    var skGrid=document.querySelector('.sk-grid');skGrid.classList.add('sk-anim');
-    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var el=en.target,k=[].indexOf.call(skCards,el);setTimeout(function(){el.classList.add('in');},(k%2)*120);io.unobserve(el);}});},{threshold:.15});
-    skCards.forEach(function(c){io.observe(c);});
-    setTimeout(function(){skCards.forEach(function(c){c.classList.add('in');});},6000);
-  }
+  /* skills: flip cards */
+  document.querySelectorAll('.fc').forEach(function(card){
+    card.addEventListener('click',function(){
+      var on=card.getAttribute('aria-pressed')!=='true';
+      card.setAttribute('aria-pressed',on?'true':'false');
+    });
+  });
 
   /* contact card */
   var cc=$('cc'),ccLast=null,ccTimer=null;
