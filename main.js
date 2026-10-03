@@ -69,10 +69,12 @@
     flipTitle.addEventListener('touchstart',flip,{passive:true});
   }
 
-  /* skills: flip cards */
+  /* skills: flip cards — hover flips on desktop (CSS), tap flips on touch */
   document.querySelectorAll('.fc').forEach(function(card){
     card.addEventListener('click',function(){
+      if(fine)return;
       var on=card.getAttribute('aria-pressed')!=='true';
+      document.querySelectorAll('.fc[aria-pressed="true"]').forEach(function(o){o.setAttribute('aria-pressed','false');});
       card.setAttribute('aria-pressed',on?'true':'false');
     });
   });
