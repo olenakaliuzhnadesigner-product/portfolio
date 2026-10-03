@@ -504,3 +504,5 @@ section{padding-block:clamp(64px,9vw,112px);border-top:1px solid var(--line)}
 
 .case:not(.wide) .cover-img{aspect-ratio:16/9}
 .cover-img img{object-position:center}
+#skills .sec-head p{justify-self:end;text-align:right}
+@media (max-width:680px){#skills .sec-head p{justify-self:start;text-align:left}}
