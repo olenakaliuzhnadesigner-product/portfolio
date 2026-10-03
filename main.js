@@ -132,3 +132,22 @@
     }else selectIt();
   });
 })();
+
+/* experience timeline: rail fills as you scroll */
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('.tl-row'));
+  if(!rows.length)return;
+  var ticking=false;
+  function update(){
+    ticking=false;
+    var mid=innerHeight*0.45;
+    rows.forEach(function(r){
+      var b=r.getBoundingClientRect();
+      var p=Math.max(0,Math.min(1,(mid-b.top)/b.height));
+      r.style.setProperty('--fill',p.toFixed(3));
+      r.classList.toggle('on',b.top<mid);
+    });
+  }
+  addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+  addEventListener('resize',update);update();
+})();
