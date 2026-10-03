@@ -416,6 +416,25 @@ section{padding-block:clamp(64px,9vw,112px);border-top:1px solid var(--line)}
 .is-flipped .f3d-in{transform:translateZ(-.55em) rotateX(-90deg)}
 .case-hero h1.f3d-ready{cursor:default}
 
+
+/* ===== Skills ===== */
+.sk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.sk-card{padding:28px;border:1px solid var(--line);border-radius:24px;background:var(--surface);display:grid;gap:18px;align-content:start;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease,border-color .3s ease}
+.sk-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -26px var(--shade);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.sk-card.sk-ai{background:var(--accent-soft);border-color:transparent}
+.sk-label{font:500 .8125rem var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.sk-ai .sk-label{color:var(--accent)}
+.sk-card ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.sk-card li{font-size:.9375rem;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease;cursor:default}
+.sk-ai li{background:var(--surface);border-color:transparent}
+.sk-card li:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);transform:translateY(-2px)}
+.sk-anim .sk-card{opacity:0;transform:translateY(28px)}
+.sk-anim .sk-card li{opacity:0;transform:translateY(10px) scale(.96)}
+.sk-anim .sk-card.in{opacity:1;transform:none;transition:opacity .6s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.sk-anim .sk-card.in li{opacity:1;transform:none;transition:opacity .4s ease calc(.15s + var(--d)*45ms),transform .5s cubic-bezier(.3,1.4,.5,1) calc(.15s + var(--d)*45ms),background .25s ease,color .25s ease}
+.sk-anim .sk-card.in li:hover{transform:translateY(-2px);transition-delay:0s}
+@media (max-width:680px){.sk-grid{grid-template-columns:minmax(0,1fr)}.sk-card{padding:22px;border-radius:20px}}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
