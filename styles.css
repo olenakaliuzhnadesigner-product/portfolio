@@ -892,3 +892,11 @@ html:has(.page-contact){scroll-behavior:auto}
   .gcase-grid>.gcase:last-child:nth-child(odd) .gcase-img{flex:none;aspect-ratio:1440/800;min-height:0}
   .gcase-grid>.gcase:last-child:nth-child(odd) .gcase-body{border-left:0;border-top:1px solid rgba(255,255,255,.08);padding:26px 28px 28px}
 }
+
+/* Cases page CTA: grid pulse background (replaces the ballpit there only) */
+.contact .grid-pulse{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+  --gp-line:color-mix(in srgb,var(--paper) 7%,transparent);
+  background-image:linear-gradient(to right,var(--gp-line) 1px,transparent 1px),linear-gradient(to bottom,var(--gp-line) 1px,transparent 1px);
+  background-size:24px 24px;
+  -webkit-mask-image:linear-gradient(to bottom,#000 92%,transparent);mask-image:linear-gradient(to bottom,#000 92%,transparent)}
+.contact .grid-pulse canvas{position:absolute;inset:0;display:block}
