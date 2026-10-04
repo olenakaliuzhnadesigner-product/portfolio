@@ -838,3 +838,9 @@ html:has(.page-contact){scroll-behavior:auto}
 .nav.nav-on-dark .theme-btn{color:#f2f4f8;border-color:rgba(255,255,255,.2)}
 .nav.nav-on-dark .btn:not(.ghost){background:#f2f4f8;color:#05070d;border-color:#f2f4f8}
 @media (max-width:720px){.lw{height:auto}.lw-stick{position:relative;top:0;height:auto;min-height:calc(100svh - 64px)}}
+.door .door-video{opacity:0;z-index:0}
+.door.has-video .door-video{opacity:1}
+.door.has-video .door-canvas{opacity:0}
+.door-title span{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:800;font-size:clamp(30px,7vw,96px);line-height:1;letter-spacing:-.02em;max-width:14ch}
+.door-tag span{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:700;font-size:clamp(20px,3.4vw,40px);line-height:1.2;letter-spacing:-.01em}
+.lw.done .lw-scroll{opacity:0;transition:opacity .4s}
