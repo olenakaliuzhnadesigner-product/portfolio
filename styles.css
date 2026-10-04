@@ -850,5 +850,4 @@ html:has(.page-contact){scroll-behavior:auto}
 .proj-logo-img{height:100%;width:auto;display:block}.proj-logo:has(.proj-logo-img){height:38px}
 .proj-logo:has(img[src="fruit-fight.png"]){height:72px}
 @media (max-width:760px){.proj-logo:has(img[src="fruit-fight.png"]){height:56px}}
-.proj:has(img[src="ff-card-bg-v1.jpg"])::before{background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.55) 36%,rgba(0,0,0,0) 58%)}
 .proj h3{text-shadow:0 2px 18px rgba(0,0,0,.45)}
