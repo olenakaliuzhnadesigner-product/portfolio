@@ -847,3 +847,4 @@ html:has(.page-contact){scroll-behavior:auto}
 /* stronger shade when a card has a real photo, so the title stays readable */
 .proj:has(.proj-bg img)::before{background:linear-gradient(90deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.35) 32%,rgba(0,0,0,0) 55%)}
 @media (max-width:760px){.proj:has(.proj-bg img)::before{background:linear-gradient(180deg,rgba(0,0,0,0) 25%,rgba(0,0,0,.7) 75%)}}
+.proj-logo-img{height:100%;width:auto;display:block}.proj-logo:has(.proj-logo-img){height:38px}
