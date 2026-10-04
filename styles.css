@@ -822,3 +822,19 @@ button.gal-item:focus-visible{outline:2px solid var(--accent);outline-offset:3px
 .door-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .door-stick::before{display:none}
 .door-shade{z-index:1}.door-title,.door-tag,.door-hint,.door-bar{z-index:2}
+/* contact page fixes: pinned first block, longer door scrub, dark nav over the doors */
+.page-contact ~ *, .page-contact{scroll-behavior:auto}
+html:has(.page-contact){scroll-behavior:auto}
+.lw{display:block;min-height:0;height:210svh;padding:0}
+.lw-stick{position:sticky;top:64px;height:calc(100svh - 64px);display:grid;place-items:center;padding:24px;overflow:hidden}
+.lw-in{min-height:min(620px,calc(100svh - 120px))}
+.lw-scroll{bottom:0}
+.lw.done .lw-scroll{opacity:.6}
+.door{height:460svh}
+.nav{transition:background .35s ease,color .35s ease,border-color .35s ease}
+.nav.nav-on-dark{background:rgba(5,7,13,.72);border-bottom-color:rgba(255,255,255,.08);color:#f2f4f8}
+.nav.nav-on-dark .brand,.nav.nav-on-dark .nav-links a{color:rgba(242,244,248,.7)}
+.nav.nav-on-dark .nav-links a[aria-current="page"],.nav.nav-on-dark .brand{color:#f2f4f8}
+.nav.nav-on-dark .theme-btn{color:#f2f4f8;border-color:rgba(255,255,255,.2)}
+.nav.nav-on-dark .btn:not(.ghost){background:#f2f4f8;color:#05070d;border-color:#f2f4f8}
+@media (max-width:720px){.lw{height:auto}.lw-stick{position:relative;top:0;height:auto;min-height:calc(100svh - 64px)}}

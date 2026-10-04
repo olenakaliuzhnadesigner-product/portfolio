@@ -18,8 +18,11 @@
       setTimeout(function(){lw.classList.add('done');done.setAttribute('aria-hidden','false');},reduce?0:500);
     }
     open.addEventListener('click',reveal);
-    /* scrolling down past the first screen also reveals the contacts */
-    addEventListener('scroll',function(){if(!opened&&scrollY>innerHeight*.12)reveal();},{passive:true});
+    /* the block is pinned while you scroll through it: a short scroll turns
+       the headline into the contacts, which then stay on screen */
+    function onScroll(){var r=lw.getBoundingClientRect(),range=r.height-innerHeight;
+      if(!opened&&((range>0&&-r.top>range*.18)||(range<=0&&scrollY>40)))reveal();}
+    addEventListener('scroll',onScroll,{passive:true});onScroll();
   }
 
   /* ---- 2. Doors: a corridor of doors that swing open as you scroll ---- */
@@ -89,6 +92,9 @@
     if(p>.85){ctx.fillStyle='rgba(255,226,180,'+((p-.85)/.15*.18)+')';ctx.fillRect(0,0,W,H);}
     var vg=ctx.createRadialGradient(W/2,H/2,Math.min(W,H)*.3,W/2,H/2,Math.max(W,H)*.75);vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,0,.55)');ctx.fillStyle=vg;ctx.fillRect(0,0,W,H);
   }
+  var navEl=document.querySelector('.nav');
+  function navTone(){var r=door.getBoundingClientRect();if(navEl)navEl.classList.toggle('nav-on-dark',r.top<64&&r.bottom>64);}
+  addEventListener('scroll',navTone,{passive:true});navTone();
   function readScroll(){var r=door.getBoundingClientRect(),range=r.height-innerHeight;target=range>0?clamp(-r.top/range,0,1):0;}
   function paint(){
     current+=(target-current)*.12;if(Math.abs(target-current)<.0005)current=target;
