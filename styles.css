@@ -851,3 +851,4 @@ html:has(.page-contact){scroll-behavior:auto}
 .proj-logo:has(img[src="fruit-fight.png"]){height:72px}
 @media (max-width:760px){.proj-logo:has(img[src="fruit-fight.png"]){height:56px}}
 .proj h3{text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.proj-logo:has(img[src="novakivsky.png"]){height:46px}
