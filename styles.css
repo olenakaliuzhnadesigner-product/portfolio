@@ -900,3 +900,4 @@ html:has(.page-contact){scroll-behavior:auto}
   background-size:24px 24px;
   -webkit-mask-image:linear-gradient(to bottom,#000 92%,transparent);mask-image:linear-gradient(to bottom,#000 92%,transparent)}
 .contact .grid-pulse canvas{position:absolute;inset:0;display:block}
+
