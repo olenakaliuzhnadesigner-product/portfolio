@@ -910,3 +910,22 @@ a.vs-opt:hover{color:var(--ink);background:color-mix(in srgb,var(--ink) 7%,trans
 a.vs-opt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .vs-opt.is-on{background:var(--ink);color:var(--paper);cursor:default}
 @media (max-width:640px){.vs-opt{padding:0 10px}.vs-opt>span{display:none}}
+.nav.nav-on-dark .ver-switch{border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06)}
+.nav.nav-on-dark .vs-opt{color:rgba(242,244,248,.7)}
+.nav.nav-on-dark .vs-opt.is-on{background:#f2f4f8;color:#05070d}
+
+/* Switch in footers. Inside the inverted CTA sections (.foot) it uses inverted colours. */
+.foot,.contact-foot{align-items:center}
+.foot-end{display:inline-flex;align-items:center;gap:16px;flex-wrap:wrap}
+.foot .ver-switch,.contact-foot .ver-switch{height:36px}
+.foot .vs-opt,.contact-foot .vs-opt{height:28px}
+.foot .ver-switch{border-color:color-mix(in srgb,var(--paper) 22%,transparent);background:color-mix(in srgb,var(--paper) 6%,transparent)}
+.foot .vs-opt{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.foot a.vs-opt:hover{color:var(--paper);background:color-mix(in srgb,var(--paper) 12%,transparent)}
+.foot .vs-opt.is-on{background:var(--paper);color:var(--ink)}
+@media (max-width:640px){.foot .vs-opt>span,.contact-foot .vs-opt>span{display:inline}}
+/* About CTA is always dark: fixed light-on-dark colours */
+.cta-tree .foot .ver-switch{border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06)}
+.cta-tree .foot .vs-opt{color:rgba(237,235,230,.72)}
+.cta-tree .foot a.vs-opt:hover{color:#fff;background:rgba(255,255,255,.12)}
+.cta-tree .foot .vs-opt.is-on{background:#EDEBE6;color:#0a0a0a}
