@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Onest:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=202610061831">
+<link rel="stylesheet" href="styles.css?v=202610071438">
 <script>try{var t=localStorage.getItem('ok-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -32,7 +32,7 @@
       <div class="crumbs mono"><a href="index.html#work">Cases</a><span>/</span><span>Novakivsky Art Gallery</span></div>
       <h1>Ukraine&#x27;s Van Gogh, given the website his paintings deserve</h1>
       <p class="lede">Oleksa Novakivskyi painted with the colour and nerve of the great expressionists, yet few people outside Lviv know his name. His great-granddaughter asked me to redesign the gallery&#x27;s website. I designed a dark, quiet space where the paintings glow, with his life story, news and a way to support the project.</p>
-      <div class="chips"><span class="chip">Culture</span><span class="chip">Website</span><span class="chip">Redesign</span><span class="chip">Mobile &amp; Desktop</span></div>
+      <div class="chips"><span class="chip">Visual storytelling</span><span class="chip">Cultural product</span><span class="chip">Brand expression</span></div>
       <div class="facts"><div class="fact"><span class="mono">Role</span><b>UI/UX Designer · research to UI</b></div><div class="fact"><span class="mono">Client</span><b>The artist&#x27;s family · Novakivsky Art Gallery</b></div><div class="fact"><span class="mono">Timeline</span><b>December 2023 · ongoing</b></div><div class="fact"><span class="mono">Platforms</span><b>Desktop · Mobile</b></div></div>
       <div class="ext-links"><a class="btn" href="https://www.behance.net/gallery/187303355/Art-Gallery-Novakivskyi-Redisign" target="_blank" rel="noopener">Case on Behance ↗</a></div>
     </div>
@@ -45,36 +45,32 @@
     </div>
   </section>
 
+  <nav class="case-nav" aria-label="Case sections"><div class="wrap"><a href="#overview">Overview</a><a href="#challenge">Challenge</a><a href="#decisions">Decisions</a><a href="#solution">Solution</a><a href="#learnings">Learnings</a></div></nav>
+
   <section style="border-top:0;padding-top:clamp(40px,6vw,72px)">
     <div class="wrap">
-      <article class="chapter"><header><span class="mono">01</span><h2>Overview</h2></header>
+      <article class="chapter" id="overview"><header><span class="mono">01</span><h2>Context</h2></header>
         <div class="prose">
-          <p><strong>Oleksa Novakivskyi (1872–1935) is often called the Ukrainian Van Gogh.</strong> Thick, restless brushstrokes, burning colour, portraits that look straight through you. He founded the Lviv art school and shaped a whole generation of painters, yet his name is still far less known than it deserves to be.</p>
-          <p>The artist's great-granddaughter came to me to redesign the gallery's old website. The goal was bigger than a portfolio of paintings: a living place to meet the artist, follow news, lectures and talks, read about his life, and support the project with a donation or by buying merchandise.</p>
+          <p><strong>Oleksa Novakivskyi (1872–1935) is often called the Ukrainian Van Gogh:</strong> thick, restless brushstrokes, burning colour, portraits that look straight through you. He founded the Lviv art school, yet his name is still far less known than it deserves to be.</p>
+          <p>The artist's great-granddaughter asked me to redesign the gallery's website: a living place to meet the artist, follow news and lectures, read about his life and support the project. This is a supporting case about visual storytelling and brand expression for a cultural product.</p>
           <figure class="shot wide">
             <img src="nv-about.jpg" alt="About this project: overview, platforms and the story" loading="lazy" width="2000" height="1827">
           </figure>
         </div></article>
 
-      <article class="chapter"><header><span class="mono">02</span><h2>The challenge</h2></header>
+      <article class="chapter" id="challenge"><header><span class="mono">02</span><h2>The challenge</h2></header>
         <div class="prose">
-          <p>Show the beauty and depth of the paintings in a way that is <strong>clear, accessible and alive</strong>, and let people feel why Novakivskyi stands next to the great expressionists.</p>
-          <ul>
-            <li>Let the colour of the paintings lead, without the interface competing for attention.</li>
-            <li>Turn a long, dense biography into a story people actually read.</li>
-            <li>Bring news, lectures, a shop and donations into one calm structure.</li>
-            <li>Work equally well on a phone, where most visitors arrive from social media.</li>
-          </ul>
+          <p>Show the depth of the paintings in a way that is <strong>clear, accessible and alive</strong>, and bring news, lectures, a shop and donations into one calm structure that works on a phone.</p>
         </div></article>
 
-      <article class="chapter"><header><span class="mono">03</span><h2>Research</h2></header>
+      <article class="chapter" id="decisions"><header><span class="mono">03</span><h2>Research and direction</h2></header>
         <div class="prose">
-          <p>Before drawing anything, I studied the old website and how people moved through it, looked at how leading museums and galleries present art online, and listened to what visitors expect: where they get lost, what they look for first, and what makes them stay.</p>
+          <p>I studied the old website, how leading museums present art online, and what visitors look for first. That shaped four decisions:</p>
           <ol class="insights">
-            <li><b>The art comes first.</b> People come to see paintings, so images need space, scale and a dark, neutral background.</li>
-            <li><b>The story builds the connection.</b> A biography split into periods, with photos and dates, is read far more than one long text.</li>
-            <li><b>Easy to find, easy to filter.</b> Portraits, landscapes, still lifes and religious works, each one tap away.</li>
-            <li><b>A clear way to help.</b> "Support the project" stays visible on every page, without pushing.</li>
+            <li><b>The art comes first.</b> Images get space, scale and a dark, neutral background.</li>
+            <li><b>The story builds the connection.</b> A biography split into periods, with photos and dates.</li>
+            <li><b>Easy to find.</b> Portraits, landscapes, still lifes and religious works, each one tap away.</li>
+            <li><b>A clear way to help.</b> “Support the project” visible on every page, without pushing.</li>
           </ol>
           <figure class="shot wide">
             <img src="nv-wireframe.jpg" alt="Wireframes of the main page, gallery, painting page and biography" loading="lazy" width="2000" height="1393">
@@ -82,7 +78,7 @@
           </figure>
         </div></article>
 
-      <article class="chapter full"><header><span class="mono">04</span><h2>Solution</h2></header>
+      <article class="chapter full" id="solution"><header><span class="mono">04</span><h2>Solution</h2></header>
         <div class="prose">
           <p>A dark, gallery-like interface with one warm gold accent, so every canvas glows like it does on a museum wall. The headline sets the tone: <strong>«Живопис, який дихає життям»</strong>, painting that breathes life.</p>
           <div class="shots">
@@ -92,29 +88,23 @@
             </figure>
             <figure class="shot wide">
               <img src="nv-biography.jpg" alt="Biography pages: timeline, Novakivskyi school, museum" loading="lazy" width="2000" height="1500">
-              <figcaption><strong>Biography.</strong> His life in three tabs: timeline, the Novakivskyi school and the museum, with large archive photos and dates.</figcaption>
+              <figcaption><strong>Biography.</strong> His life in three tabs: timeline, the Novakivskyi school and the museum.</figcaption>
             </figure>
             <figure class="shot">
               <img src="nv-pages.jpg" alt="News, painting page, shop and donation pages" loading="lazy" width="2000" height="2000">
-              <figcaption><strong>Every page in one system.</strong> News and lectures, a painting page with "you may also like", the shop and donations.</figcaption>
+              <figcaption><strong>One system.</strong> News and lectures, a painting page, the shop and donations.</figcaption>
             </figure>
             <figure class="shot">
               <img src="nv-mobile.jpg" alt="Mobile screens of the gallery website" loading="lazy" width="2000" height="1830">
-              <figcaption><strong>Mobile.</strong> The same atmosphere on a phone: hero, gallery, biography, news and shop.</figcaption>
+              <figcaption><strong>Mobile.</strong> The same atmosphere on a phone.</figcaption>
             </figure>
           </div>
         </div></article>
 
-      <article class="chapter"><header><span class="mono">05</span><h2>What's next</h2></header>
+      <article class="chapter" id="learnings"><header><span class="mono">05</span><h2>What's next and what I learned</h2></header>
         <div class="prose">
-          <p>The collaboration continues. Together with the artist's family and a developer, I'm now building a new version of the website, adapted to how people browse today and ready to bring Novakivskyi to a wider, international audience.</p>
-        </div></article>
-
-      <article class="chapter"><header><span class="mono">06</span><h2>What I learned</h2></header>
-        <div class="prose">
+          <p>The collaboration continues: together with the artist's family and a developer, I'm now working on a new version of the website for a wider, international audience.</p>
           <p><strong>Design can step back.</strong> When the content is this strong, the best interface is the one you don't notice.</p>
-          <p><strong>Stories need structure.</strong> A life split into periods, photos and dates turns a museum text into something people want to read.</p>
-          <p><strong>Working with a family's legacy</strong> means listening carefully: every decision is also about memory and respect.</p>
         </div></article>
 
     </div>
@@ -123,7 +113,7 @@
   <section style="padding-top:0;border-top:0">
     <div class="wrap">
       <a class="next" href="case-extra-safe.html">
-        <div><span class="eyebrow">Next case</span><h3>Websites, visuals and app flows for a messenger where money moves in chat</h3></div>
+        <div><span class="eyebrow">Next case</span><h3>Designing clarity across a complex fintech and communication ecosystem</h3></div>
         <span class="arr" aria-hidden="true">→</span>
       </a>
     </div>
@@ -140,11 +130,9 @@
         <span class="toast mono" id="toast" aria-live="polite"></span>
       </div>
       <div class="socials">
-        <a class="btn ghost" href="https://t.me/kaliuzhnaolena" target="_blank" rel="noopener">Telegram ↗</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/kaliuzhnaolena/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn ghost" href="https://www.behance.net/kaliuzhnaolena" target="_blank" rel="noopener">Behance ↗</a>
-        <a class="btn ghost" href="https://dribbble.com/Kaliuzhna" target="_blank" rel="noopener">Dribbble ↗</a>
         <button class="btn ghost" type="button" data-cv>View CV</button>
+        <a class="btn ghost" href="https://t.me/kaliuzhnaolena" target="_blank" rel="noopener">Telegram ↗</a>
       </div>
       <div class="foot mono"><span>© 2026 Olena Kaliuzhna</span><span class="foot-end"><a href="index.html" style="text-decoration:none">← Back to portfolio</a><div class="ver-switch" role="group" aria-label="Site version"><a class="vs-opt" href="https://olena-kaliuzhna-design.github.io/portfolio/" title="Short version: everything on one page"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2" width="9" height="12" rx="1.6"/><path d="M6 6h4M6 8.5h2.5"/></svg><span>Short</span></a><span class="vs-opt is-on" aria-current="page" title="Full version"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="4" width="8.5" height="10" rx="1.6"/><path d="M5 4V3.4C5 2.6 5.6 2 6.4 2h6.1c.8 0 1.5.6 1.5 1.4v7.2c0 .8-.7 1.4-1.5 1.4h-2"/></svg><span>Full</span></span></div></span></div>
     </div>
@@ -165,5 +153,6 @@
 <script src="testimonials.js"></script>
 <script src="ballpit.js" defer></script>
 <script src="constellation.js" defer></script>
+<script src="casenav.js" defer></script>
 </body>
 </html>
