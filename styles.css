@@ -1056,3 +1056,13 @@ a.vs-opt:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .tb-col:nth-child(2){grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media (max-width:640px){.tb-col,.tb-col:nth-child(2){grid-template-columns:minmax(0,1fr)}}
+/* Phone screen galleries (FitNow case) */
+.phones{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;align-items:start;margin:8px 0 12px}
+.phones.phones-2{grid-template-columns:repeat(2,minmax(0,240px))}
+.phones figure{margin:0;display:grid;gap:8px;min-width:0}
+.phones img{width:100%;height:auto;border-radius:22px;border:1px solid var(--line);display:block;background:var(--surface)}
+.phones figcaption{font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.phones figcaption b{color:var(--ink);font-weight:500}
+@media (max-width:640px){.phones{grid-template-columns:repeat(2,minmax(0,1fr))}.phones.phones-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.results.results-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:640px){.results.results-4{grid-template-columns:repeat(2,minmax(0,1fr))}}

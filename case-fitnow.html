@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitNow — Olena Kaliuzhna</title>
+<meta name="description" content="Turning installs into first bookings for a fitness subscription. Case study by Olena Kaliuzhna, Product Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Onest:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=202610181628">
+<script>try{var t=localStorage.getItem('ok-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Olena Kaliuzhna</a>
+    <nav class="nav-links" aria-label="Pages"><a href="cases.html" aria-current="page">Cases</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="break.html">Take a break</a></nav>
+    <div class="nav-actions">
+      <button class="btn ghost icon-btn theme-btn" id="theme" type="button" aria-label="Switch colour theme">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+      </button>
+      <button class="btn" type="button" data-cv><span class="cv-label">View</span> CV</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap">
+      <div class="crumbs mono"><a href="index.html#work">Cases</a><span>/</span><span>FitNow</span></div>
+      <h1>Turning installs into first bookings for a fitness subscription</h1>
+      <p class="lede">FitNow gives one subscription to 250+ sport and wellness studios in Kyiv, but only 2 of every 100 people who installed the app reached a first booking. With a teammate, I researched how people really choose a class and redesigned the path from the first open to the first booking.</p>
+      <div class="chips"><span class="chip">Activation</span><span class="chip">UX research</span><span class="chip">Mobile app</span><span class="chip">Client project</span></div>
+      <div class="facts"><div class="fact"><span class="mono">Role</span><b>Product Designer · research, UX/UI</b></div><div class="fact"><span class="mono">Client</span><b>FitNow, Kyiv · project at Projector</b></div><div class="fact"><span class="mono">Team</span><b>2 product designers · with Olena Polishchuk</b></div><div class="fact"><span class="mono">Timeline</span><b>May — Aug 2026 · iOS &amp; Android</b></div></div>
+      <div class="ext-links"></div>
+    </div>
+  </section>
+
+  <section class="hero-cover">
+    <div class="wrap">
+      <!-- Hero image: set cover_img for this project in build.py -->
+      <div class="cover cover-img"><img src="fn-cover.jpg" alt="FitNow onboarding, personalised home and map screens" width="2400" height="1350"></div>
+    </div>
+  </section>
+
+  <nav class="case-nav" aria-label="Case sections"><div class="wrap"><a href="#overview">Overview</a><a href="#challenge">Challenge</a><a href="#decisions">Decisions</a><a href="#solution">Solution</a><a href="#impact">Impact</a><a href="#learnings">Learnings</a></div></nav>
+
+  <section style="border-top:0;padding-top:clamp(40px,6vw,72px)">
+    <div class="wrap">
+      <article class="chapter" id="overview"><header><span class="mono">01</span><h2>Context</h2></header>
+        <div class="prose">
+          <p><strong>FitNow is one subscription to 250+ sport and wellness studios in Kyiv.</strong> Instead of a membership to one gym, people get yoga today, boxing tomorrow and a pool on Sunday, booked in a few taps.</p>
+          <p>The app was live on iOS and Android with its first paying users and was moving to a new subscription model. FitNow brought us a real brief: rethink the path from the first app open to the first class booking. I worked on it with Olena Polishchuk, as a team of two product designers, from May to August 2026.</p>
+          <div class="cx-grid">
+            <div><b>Competes with</b><span>Single-studio memberships, not one-off visits</span></div>
+            <div><b>Audience</b><span>Kyiv residents 22–40 who pay for themselves, and parents choosing activities for kids</span></div>
+            <div><b>Stage</b><span>Early traction, moving to a new monetization model</span></div>
+            <div><b>Product job</b><span>Take a new user from install to the first real studio visit, then build a habit</span></div>
+          </div>
+        </div></article>
+
+      <article class="chapter" id="challenge"><header><span class="mono">02</span><h2>The challenge</h2></header>
+        <div class="prose">
+          <p><strong>Only 2 of every 100 people who installed FitNow reached a first booking.</strong> Acquisition worked and people did install the app. They left in the gap between install and first value, before they understood why one subscription beats a regular membership.</p>
+          <ol class="insights">
+            <li><b>The onboarding carousel did not lead to a first action.</b></li>
+            <li><b>The app did not explain why it is better than a regular membership.</b></li>
+            <li><b>Push scenarios broke off</b> and never brought users back.</li>
+            <li><b>A free trial class existed,</b> but users learned about it too late.</li>
+          </ol>
+          <span class="mono group-label">Success metrics</span>
+          <div class="results">
+            <div class="stat"><b>2% → 15%</b><span>install → first booking, current and target</span></div>
+            <div class="stat"><b>↓</b><span>time to the first booking</span></div>
+            <div class="stat"><b>↑</b><span>search → booking conversion</span></div>
+          </div>
+        </div></article>
+
+      <article class="chapter" id="role"><header><span class="mono">03</span><h2>My role</h2></header>
+        <div class="prose">
+          <p>We were two product designers and shared the project end to end, from the funnel audit to the client presentation. My part:</p>
+          <div class="chips"><span class="chip">Funnel analytics</span><span class="chip">Research synthesis</span><span class="chip">User interviews</span><span class="chip">Usability testing</span><span class="chip">UX/UI design</span><span class="chip">UI kit</span></div>
+          <div class="mini-steps"><span><b>May</b>Brief and funnel audit</span><span><b>Jun</b>16 interviews, synthesis, CJM</span><span><b>Jul</b>Hypotheses, flows, UI kit</span><span><b>Aug</b>Prototype, testing, presentation</span></div>
+        </div></article>
+
+      <article class="chapter" id="audit"><header><span class="mono">04</span><h2>11 steps before the home screen</h2></header>
+        <div class="prose">
+          <p>We walked the live app from splash to booking and mapped every screen. Several onboarding steps asked for data that gave the user nothing back at the start, such as gender and Instagram.</p>
+          <ol class="flow">
+            <li><b>Splash</b></li><li><b>Sports offer</b></li><li><b>Subscription</b></li><li><b>Phone</b></li><li><b>SMS code</b></li><li><b>Interests</b></li><li><b>Name</b></li><li><b>Gender</b></li><li><b>Birth date</b></li><li><b>Instagram</b></li><li><b>Options → Home</b></li>
+          </ol>
+          <ol class="insights">
+            <li><b>No visible Book button on the schedule.</b> People reached a class and stopped. Analytics showed a sharp drop in events right after the studio schedule view.</li>
+            <li><b>9+ identical cards in a row.</b> The home feed listed classes with the same name one after another, with no sorting by interest or distance.</li>
+            <li><b>Points nobody understood.</b> Users heard about points only in onboarding and had no reason to buy them before seeing the product.</li>
+          </ol>
+          <blockquote class="insight"><span class="mono">From the walkthroughs</span><p>“Honestly, I didn't get why they need my Instagram. I already verified with my phone.”</p></blockquote>
+        </div></article>
+
+      <article class="chapter" id="research"><header><span class="mono">05</span><h2>How people really choose a class</h2></header>
+        <div class="prose">
+          <p>In-depth interviews with adults choosing sport for themselves and with parents choosing activities for their kids, synthesised with an affinity map, customer journey maps and an opportunity solution tree.</p>
+          <div class="results results-4">
+            <div class="stat"><b>16</b><span>in-depth interviews</span></div>
+            <div class="stat"><b>2</b><span>audience segments</span></div>
+            <div class="stat"><b>5</b><span>behavioural groups</span></div>
+            <div class="stat"><b>8</b><span>hypotheses ranked with ICE</span></div>
+          </div>
+          <ol class="insights">
+            <li><b>Location comes first.</b> People pick a studio by route, and the route has several anchors: home, work, a kindergarten. → saved anchor points</li>
+            <li><b>Google Maps is the learned way to search.</b> FitNow asked people to fill Where and When as separate steps. → map as the search entry point</li>
+            <li><b>The schedule decides.</b> A great studio at the wrong time is a dead end. → sorting by schedule match</li>
+            <li><b>Nobody wants to start alone.</b> Adults feel safer with friends; kids go where their friends go. → invite a friend</li>
+            <li><b>Price has to be obvious.</b> Points hid the real cost; people wanted prices and balance in hryvnias. → pricing in UAH, bonuses as a reward</li>
+          </ol>
+          <span class="mono group-label">Segments</span>
+          <div class="cx-grid">
+            <div><b>A · In this release</b><span>Trains offline, chooses for self. Location, schedule, price, atmosphere. Needs a clear price per class and a visible balance.</span></div>
+            <div><b>B · In this release</b><span>Chooses for a child. Safety, trainer, age fit, schedule. Needs search near saved addresses like home or a kindergarten.</span></div>
+            <div><b>C · Future</b><span>Prefers online training. Not interviewed directly; extrapolated from external data. Left as a future opportunity.</span></div>
+          </div>
+        </div></article>
+
+      <article class="chapter full" id="decisions"><header><span class="mono">06</span><h2>8 ideas, 3 bets</h2></header>
+        <div class="prose">
+          <p>Every hypothesis had to remove one concrete barrier between install and the first booking. We ranked eight ideas with ICE and took three into design and testing.</p>
+          <div class="decisions">
+            <article class="decision">
+              <span class="mono">Hypothesis 01</span><h3>Onboarding that pays back every answer</h3>
+              <dl>
+                <div><dt>Based on</dt><dd>11 steps from splash to home; gender and Instagram gave nothing back at the start.</dd></div>
+                <div><dt>We believe</dt><dd>Asking only what improves the first results (who it is for, interests, where, how you travel) and opening a personalised home will lead more people to a first booking.</dd></div>
+                <div><dt>Right if</dt><dd>Onboarding completion grows and more installs reach a first booking.</dd></div>
+              </dl>
+            </article>
+            <article class="decision">
+              <span class="mono">Hypothesis 02</span><h3>The map is the search</h3>
+              <dl>
+                <div><dt>Based on</dt><dd>Both segments already search on a map and choose by route and schedule fit.</dd></div>
+                <div><dt>We believe</dt><dd>If a saved anchor address exists, the map opens with studios sorted by distance from it and by schedule match. Manual Where and When stay for anyone who wants them.</dd></div>
+                <div><dt>Right if</dt><dd>Time to booking goes down and search → booking conversion goes up.</dd></div>
+              </dl>
+            </article>
+            <article class="decision">
+              <span class="mono">Hypothesis 03</span><h3>Bring a friend to the same class</h3>
+              <dl>
+                <div><dt>Based on</dt><dd>People start and keep training more easily with friends; kids go where their friends go.</dd></div>
+                <div><dt>We believe</dt><dd>Inviting a friend to the same class with one link, with bonuses for both, will grow first bookings from invited users.</dd></div>
+                <div><dt>Right if</dt><dd>Invited users grow, book a first class and come back for repeat visits.</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div></article>
+
+      <article class="chapter full" id="solution"><header><span class="mono">07</span><h2>Solution</h2></header>
+        <div class="prose">
+          <h3 class="sub">01 · Five questions, each one changes the first screen</h3>
+          <p>The first screen states the offer. Then: who it is for (me, my child or both), interests, where, and how you travel. People think in minutes, not kilometres, so travel mode and time replace an abstract radius. The answers reorder the home feed, and free trainings get their own row, so the activation hook is on screen one.</p>
+          <div class="phones">
+            <figure><img src="fn-ob1.jpg" alt="FitNow onboarding: the offer in one sentence" loading="lazy" width="393" height="852"><figcaption><b>Value first.</b> The offer in one sentence.</figcaption></figure>
+            <figure><img src="fn-ob-who.jpg" alt="Onboarding: for me, for my child or both" loading="lazy" width="393" height="852"><figcaption><b>Who it is for.</b> Kids get their own path.</figcaption></figure>
+            <figure><img src="fn-ob-interests.jpg" alt="Onboarding: pick interests" loading="lazy" width="393" height="940"><figcaption><b>Interests.</b> Picks reorder the feed.</figcaption></figure>
+            <figure><img src="fn-ob-where.jpg" alt="Onboarding: current location or own address" loading="lazy" width="393" height="852"><figcaption><b>Where.</b> Location, metro or district.</figcaption></figure>
+            <figure><img src="fn-ob-travel.jpg" alt="Onboarding: walk, metro or car and how long" loading="lazy" width="393" height="852"><figcaption><b>How you travel.</b> Minutes, not kilometres.</figcaption></figure>
+            <figure><img src="fn-ob-search.jpg" alt="Finding studios 15 minutes on foot" loading="lazy" width="393" height="852"><figcaption><b>Search.</b> The answers echoed back.</figcaption></figure>
+            <figure><img src="fn-home.jpg" alt="Personalised home feed" loading="lazy" width="393" height="852"><figcaption><b>Home.</b> A feed that already knows you.</figcaption></figure>
+          </div>
+
+          <h3 class="sub">02 · The map is the search</h3>
+          <p>Route and schedule become one entry point. Before: open search, choose What, Where and When, then read a list, five steps to a result. After: the map opens already sorted around the user's saved places and free time.</p>
+          <div class="phones phones-2">
+            <figure><img src="fn-map.jpg" alt="Map with studios sorted around a saved address" loading="lazy" width="393" height="866"><figcaption><b>Map.</b> Results on open, sorted by anchor and schedule.</figcaption></figure>
+            <figure><img src="fn-addresses.jpg" alt="Saved anchor addresses: home, work, kindergarten" loading="lazy" width="393" height="900"><figcaption><b>Anchor addresses.</b> Home, work, a kindergarten.</figcaption></figure>
+          </div>
+
+          <h3 class="sub">03 · Bring a friend to the same class</h3>
+          <p>One link invites a friend to the exact class from the class page. After a successful invite, both get +20 bonuses.</p>
+          <div class="phones">
+            <figure><img src="fn-training.jpg" alt="Class page with an invite button" loading="lazy" width="393" height="852"><figcaption><b>01</b> Invite from the class page</figcaption></figure>
+            <figure><img src="fn-share.jpg" alt="Share one link" loading="lazy" width="393" height="852"><figcaption><b>02</b> Share one link</figcaption></figure>
+            <figure><img src="fn-sent.jpg" alt="Invite sent, waiting for the reply" loading="lazy" width="393" height="852"><figcaption><b>03</b> Wait for the reply</figcaption></figure>
+            <figure><img src="fn-accepted.jpg" alt="Friend joined the class" loading="lazy" width="393" height="852"><figcaption><b>04</b> Friend joins the class</figcaption></figure>
+            <figure><img src="fn-gift.jpg" alt="Both get bonuses" loading="lazy" width="394" height="853"><figcaption><b>05</b> Both get +20 bonuses</figcaption></figure>
+          </div>
+
+          <h3 class="sub">A system the team can ship</h3>
+          <p>The brand stayed as the brief required. The screens got a cleaned-up UI kit, which I then turned into a design system for handoff: three layers of tokens (primitives → semantic → components), 21 text styles instead of 40+, and atoms, molecules and organisms with their states.</p>
+          <div class="cx-grid">
+            <div><b>Brand</b><span>#02066F · pressed #00349C · bonus #ED4B00</span></div>
+            <div><b>Icons</b><span>100+ line icons, 20 px</span></div>
+            <div><b>Inputs &amp; code input</b><span>6 states each</span></div>
+            <div><b>Buttons</b><span>3 types · 2 sizes · 3 states</span></div>
+            <div><b>Cards</b><span>Studio, class, event, plan</span></div>
+          </div>
+        </div></article>
+
+      <article class="chapter" id="impact"><header><span class="mono">08</span><h2>Testing and outcome</h2></header>
+        <div class="prose">
+          <p>We tested the three flows on a clickable prototype with respondents from both segments, following a test plan and a discussion guide.</p>
+          <div class="results">
+            <div class="stat"><b>20</b><span>usability sessions</span></div>
+            <div class="stat"><b>3</b><span>flows tested: onboarding, map, invite</span></div>
+            <div class="stat"><b>Aug 31</b><span>client presentation and handoff</span></div>
+          </div>
+          <p>We handed FitNow the flows, the UI kit and the metrics to track for each hypothesis: onboarding completion, time to booking, search → booking conversion, and invites sent and accepted. The activation result (2% → 15% target) will be measured by the FitNow team after release.</p>
+        </div></article>
+
+      <article class="chapter" id="learnings"><header><span class="mono">09</span><h2>What I learned and what comes next</h2></header>
+        <div class="prose">
+          <p><strong>Every question in onboarding has to pay the user back.</strong> If an answer does not change what people see next, it is a reason to leave.</p>
+          <p><strong>Copy the way people already search.</strong> A map and a route felt natural because that is how people already look for a gym.</p>
+          <h3 class="sub">Next</h3>
+          <ul>
+            <li><strong>Retention.</strong> Push scenarios that follow the first visit and bring the user back for a second class.</li>
+            <li><strong>Subscription.</strong> S, M and L plans priced in UAH with a 7-day trial, so the price is clear before the first payment.</li>
+            <li><strong>Segment C.</strong> Online formats for people who prefer to train at home.</li>
+          </ul>
+        </div></article>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0;border-top:0">
+    <div class="wrap">
+      <a class="next" href="case-timeplaceme.html">
+        <div><span class="eyebrow">Next case</span><h3>Leading design for an AI-powered social gifting marketplace</h3></div>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact slim cta-work">
+    <div class="constellation" data-constellation aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2>Work with me.</h2>
+      <div class="mail-row">
+        <span class="mail" id="mail">kaliuzhna.designer@gmail.com</span>
+        <button class="btn" id="copy" type="button">Copy email</button>
+        <span class="toast mono" id="toast" aria-live="polite"></span>
+      </div>
+      <div class="socials">
+        <a class="btn ghost" href="https://www.linkedin.com/in/kaliuzhnaolena/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <button class="btn ghost" type="button" data-cv>View CV</button>
+        <a class="btn ghost" href="https://t.me/kaliuzhnaolena" target="_blank" rel="noopener">Telegram ↗</a>
+      </div>
+      <div class="foot mono"><span>© 2026 Olena Kaliuzhna</span><span class="foot-end"><a href="index.html" style="text-decoration:none">← Back to portfolio</a><div class="ver-switch" role="group" aria-label="Site version"><a class="vs-opt" href="https://olena-kaliuzhna-design.github.io/portfolio/" title="Short version: everything on one page"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2" width="9" height="12" rx="1.6"/><path d="M6 6h4M6 8.5h2.5"/></svg><span>Short</span></a><span class="vs-opt is-on" aria-current="page" title="Full version"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="4" width="8.5" height="10" rx="1.6"/><path d="M5 4V3.4C5 2.6 5.6 2 6.4 2h6.1c.8 0 1.5.6 1.5 1.4v7.2c0 .8-.7 1.4-1.5 1.4h-2"/></svg><span>Full</span></span></div></span></div>
+    </div>
+  </section>
+</main>
+<div class="cv-view" id="cv-view" role="dialog" aria-modal="true" aria-label="CV of Olena Kaliuzhna" hidden>
+  <div class="cv-panel">
+    <div class="cv-bar">
+      <span class="mono">CV · Olena Kaliuzhna · Product Designer</span>
+      <a class="btn ghost" href="cv.pdf" download="Olena_Kaliuzhna_CV.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <button class="btn icon-btn" type="button" id="cv-close" aria-label="Close CV">✕</button>
+    </div>
+    <div class="cv-scroll"><img src="cv.jpg" alt="CV of Olena Kaliuzhna, Product Designer: summary, skills, experience, education" loading="lazy" width="1500" height="3908"></div>
+  </div>
+</div>
+<script src="confetti.js"></script>
+<script src="main.js"></script>
+<script src="testimonials.js"></script>
+<script src="ballpit.js" defer></script>
+<script src="constellation.js" defer></script>
+<script src="casenav.js" defer></script>
+</body>
+</html>
