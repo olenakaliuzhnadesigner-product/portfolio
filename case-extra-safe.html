@@ -385,6 +385,46 @@ a{color:inherit}
 .es-deskview img.on{opacity:1;transform:none}
 .es-deskcap{color:var(--mute);font-size:15px;margin:14px 0 0;min-height:24px}
 
+
+/* added: kpis, worked, quotes, recs */
+.es-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.es-kpis div{padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,rgba(91,201,154,.12),rgba(59,95,168,.08));border:1px solid rgba(91,201,154,.22)}
+.es-kpis b{display:block;font-family:var(--f-display);font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.es-kpis span{font-size:12.5px;color:#B7C2BD;line-height:1.35;display:block;margin-top:4px}
+.es-mix{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 18px}
+.es-mix span{font-size:13px;color:var(--mute);padding:6px 11px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.es-mix b{color:var(--text);font-weight:500}
+.es-worked{padding:20px 22px;border-color:rgba(91,201,154,.3)}
+.es-worked ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
+.es-worked li{font-size:14.5px;color:var(--mute);padding-left:26px;position:relative}
+.es-worked li::before{content:"✓";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--green);color:#0E1A14;font-size:11px;display:grid;place-items:center;font-weight:700}
+.es-worked li b{color:var(--text);font-weight:500}
+.es-broke{display:block;color:#F08A7E;margin-bottom:12px}
+.es-quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+@media(max-width:860px){.es-quotes{grid-template-columns:1fr}}
+.es-quotes figure{margin:0;padding:24px 24px 20px;border-radius:22px 22px 22px 6px;background:#232523;border:1px solid var(--line2);position:relative;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.es-quotes figure:hover{transform:translateY(-6px) rotate(-.6deg)}
+.es-quotes figure:nth-child(2){border-radius:22px 22px 6px 22px;background:linear-gradient(135deg,rgba(91,201,154,.2),rgba(91,201,154,.06));border-color:rgba(91,201,154,.3)}
+.es-quotes blockquote{margin:0;font-family:var(--f-display);font-size:19px;line-height:1.35;color:var(--text)}
+.es-quotes figcaption{margin-top:14px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.es-recs{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;margin-top:70px;align-items:start}
+@media(max-width:900px){.es-recs{grid-template-columns:1fr}}
+.es-qs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 10px}
+.es-qs span{font-family:var(--f-display);font-size:17px;padding:8px 14px;border-radius:16px 16px 16px 4px;background:#232523;border:1px solid var(--line2)}
+.es-qs span:last-child{background:var(--green);color:#0E1A14;border-color:var(--green)}
+.es-reclist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px;counter-reset:rc}
+@media(max-width:560px){.es-reclist{grid-template-columns:1fr}}
+.es-reclist li{counter-increment:rc;padding:18px 18px 16px;border-radius:18px;background:var(--card);border:1px solid var(--line);transition:border-color .3s,transform .3s}
+.es-reclist li:hover{border-color:var(--green);transform:translateY(-3px)}
+.es-reclist li::before{content:"0" counter(rc);font-family:var(--f-mono);font-size:11px;color:var(--green);display:block;margin-bottom:8px}
+.es-reclist b{display:block;font-weight:500;font-size:15.5px;margin-bottom:4px;line-height:1.3}
+.es-reclist span{font-size:13.5px;color:var(--mute);line-height:1.45;display:block}
+.es-learn{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1100px){.es-learn{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.es-learn{grid-template-columns:1fr}}
+.es-diff{background:linear-gradient(135deg,rgba(240,138,126,.1),rgba(91,201,154,.06)),var(--card)}
+.es-diff .num{-webkit-text-stroke-color:rgba(240,138,126,.6)}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .rv,.es-h1 .w{opacity:1;transform:none}
@@ -420,6 +460,11 @@ a{color:inherit}
         <div><span>Company</span><b>Extra Safe · Norionsoft OÜ</b></div>
         <div><span>Timeline</span><b>Nov 2024 — present</b></div>
         <div><span>Platforms</span><b>Web · iOS · Android · Desktop</b></div>
+      </div>
+      <div class="es-kpis rv d3">
+        <div><b>2</b><span>research studies behind the decisions</span></div>
+        <div><b>11 + 31</b><span>usability and beta sessions</span></div>
+        <div><b>4</b><span>platforms in one design system</span></div>
       </div>
       <div class="es-links rv d4">
         <a class="es-btn p mag" href="https://www.extrasafe.chat/" target="_blank" rel="noopener">Visit extrasafe.chat ↗</a>
@@ -480,6 +525,7 @@ a{color:inherit}
     <span class="es-mono rv">02 · The challenge</span>
     <h2 class="es-h2 rv d1">Two kinds of trust,<br>in one app</h2>
     <p class="es-lead rv d2">Most people don't read security claims and don't know what P2P encryption or a seed phrase is. <b>The challenge was not to design individual screens, but to make a complex, high-stakes product feel obvious and safe.</b></p>
+    <p class="es-lead rv d2" style="margin-top:-4px">Features grew faster than our picture of what people needed. The team needed evidence: <b>which parts of the product build trust, and which quietly break it.</b></p>
     <div class="es-trust">
       <div class="spot rv"><div class="ic">💬</div><span class="es-mono">Trust with conversations</span><p class="q">“Can anyone read this?”</p><p class="es-p" style="margin-top:10px">Encryption, self-destructing messages and P2P calls only matter if people feel them, not just read about them.</p></div>
       <div class="spot rv d1"><div class="ic">💸</div><span class="es-mono">Trust with money</span><p class="q">“Did it arrive? Did I lose it?”</p><p class="es-p" style="margin-top:10px">Self-custody, networks, fees and stablecoins: every label and confirmation either builds trust or breaks it.</p></div>
@@ -562,8 +608,18 @@ a{color:inherit}
           <div><b data-count="11">11</b><span>sessions</span></div>
           <div><b data-count="7">7</b><span>core tasks</span></div>
         </div>
-        <p class="es-p">Each session: a short interview, then tasks from finding the app in the App Store to sending an invite link. Hover a finding to replay it.</p>
+        <p class="es-p">Each session: a short interview about how people communicate at work and in life, then tasks from finding the app in the App Store to sending an invite link.</p>
+        <div class="es-mix"><span>Avg age <b>34.5</b></span><span><b>8</b> men · <b>3</b> women</span><span><b>8</b> Ukraine · <b>3</b> abroad</span><span>Chats over calls: <b>8</b></span></div>
+        <div class="es-worked spot">
+          <span class="es-mono">✓ What built trust</span>
+          <ul>
+            <li><b>Onboarding just worked.</b> 10 of 11 went through it with no questions, and nobody had doubts about signing up.</li>
+            <li><b>A name, not a phone number.</b> All 11 created a name without hesitation; it felt like ordinary registration.</li>
+          </ul>
+        </div>
       </div>
+      <div>
+      <span class="es-mono es-broke rv">✕ What broke trust · hover a card to replay</span>
       <div class="es-find">
         <div class="spot rv" data-dots="8" data-of="11"><div class="n">8<small>of 11</small></div><p>didn't read the App Store description, and 5 said it didn't help them feel safe</p><div class="es-dots"></div></div>
         <div class="spot rv d1" data-dots="8" data-of="11"><div class="n">8<small>of 11</small></div><p>pressed the Link button expecting to add a contact</p><div class="es-dots"></div></div>
@@ -572,12 +628,37 @@ a{color:inherit}
         <div class="spot rv d2" data-dots="6" data-of="11"><div class="n">6<small>of 11</small></div><p>disliked messages disappearing by default</p><div class="es-dots"></div></div>
         <div class="spot rv d3" data-dots="4" data-of="11"><div class="n">4<small>of 11</small></div><p>said they would stop using the app at that point</p><div class="es-dots"></div></div>
       </div>
+      </div>
+    </div>
+
+    <div class="es-quotes">
+      <figure class="rv"><blockquote>“It's more a description of features than an explanation of your security.”</blockquote><figcaption>Participant, on the App Store page</figcaption></figure>
+      <figure class="rv d1"><blockquote>“I should be able to log into the app and already feel confident in it.”</blockquote><figcaption>Participant, on security banners</figcaption></figure>
+      <figure class="rv d2"><blockquote>“It feels very strange to see the logo. It would make more sense to have just a profile image.”</blockquote><figcaption>Participant, during a call</figcaption></figure>
     </div>
 
     <div class="es-insight rv">
       <span class="es-mono">Key insight</span>
       <p>People don't trust text. <em>Trust has to be built before someone opens the app</em>, then confirmed by a product that feels obvious.</p>
       <small>The findings became a round of changes to onboarding, contacts, calls, chats and security messaging, and shaped my work on the website and the store pages.</small>
+    </div>
+
+    <div class="es-recs">
+      <div class="rv">
+        <span class="es-mono">From findings to direction</span>
+        <h3 class="es-h3" style="margin-top:12px">What we recommended</h3>
+        <p class="es-p">Every finding became a concrete change, presented to the team task by task.</p>
+        <div class="es-qs"><span>Who are we?</span><span>Who is it for?</span><span>Why choose us?</span></div>
+        <p class="es-p" style="font-size:14px">The three questions we left the team with. The website restructure is my answer to the last one.</p>
+      </div>
+      <ol class="es-reclist">
+        <li class="rv"><b>Explain security simply, before the app</b><span>Short, plain-language proof in the store and on the site instead of terms like P2P.</span></li>
+        <li class="rv d1"><b>A home screen with clear ways to add a contact</b><span>Remove the confusing link widget and the dialer.</span></li>
+        <li class="rv d2"><b>One Calls tab</b><span>Merge calls and meetings, with group calls inside.</span></li>
+        <li class="rv"><b>A shorter security message</b><span>One line, a “learn more” link, hidden after a few seconds.</span></li>
+        <li class="rv d1"><b>Disappearing messages as an option</b><span>Chats stay by default; the timer is a choice.</span></li>
+        <li class="rv d2"><b>Avatars and calmer calls</b><span>Profile pictures instead of a big logo, clearer button states.</span></li>
+      </ol>
     </div>
 
     <div class="es-beta">
@@ -809,11 +890,12 @@ a{color:inherit}
 <section class="es-sec" id="learnings">
   <div class="es-wrap">
     <span class="es-mono rv">12 · What I learned</span>
-    <h2 class="es-h2 rv d1">Three things<br>I take with me</h2>
+    <h2 class="es-h2 rv d1">What I take with me,<br>and what I'd change</h2>
     <div class="es-learn">
       <div class="spot rv"><span class="num">01</span><h4>In fintech, clarity is a security feature</h4><p>A vague label costs more than a missing feature: when money and private messages live in one app, every label, confirmation and empty state either builds trust or breaks it.</p></div>
       <div class="spot rv d1"><span class="num">02</span><h4>Research works as a habit, not a project</h4><p>Test, change, test again. The move from “secure messenger” to “money in chat” came from watching how people actually used the product.</p></div>
       <div class="spot rv d2"><span class="num">03</span><h4>A design system is a business tool</h4><p>It decides how fast a company can say yes to a new feature or a new market.</p></div>
+      <div class="spot rv d3 es-diff"><span class="num">04</span><h4>What I'd do differently: recruit for one audience</h4><p>Only 2 of our 11 participants matched the target audience. Next time I'd define one segment first and recruit to it, so every finding speaks for the people we build for.</p></div>
     </div>
   </div>
 </section>
