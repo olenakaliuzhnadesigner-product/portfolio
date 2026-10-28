@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Onest:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=202610281628">
+<link rel="stylesheet" href="styles.css?v=202610281644">
 <script>try{var t=localStorage.getItem('ok-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
@@ -41,7 +41,7 @@
   <section class="hero-cover">
     <div class="wrap">
       <!-- Hero image: set cover_img for this project in build.py -->
-      <div class="cover cover-img"><img src="es-cover-short.jpg" alt="Extra Safe desktop and mobile chat with in-chat USDT transfers" width="2400" height="1350"></div>
+      <div class="cover cover-img"><img src="es-cover-hero.jpg" alt="Extra Safe desktop and mobile chat with in-chat USDT transfers" width="2400" height="1350"></div>
     </div>
   </section>
 
@@ -49,7 +49,7 @@
 
   <section style="border-top:0;padding-top:clamp(40px,6vw,72px)">
     <div class="wrap">
-      <style>.chapter{padding-block:clamp(26px,3vw,36px)}.chapter .results{margin-top:14px}.hero-cover .cover-img{aspect-ratio:2/1}.case-hero{padding-bottom:28px}.own ul{margin:0}</style>
+      <style>.chapter{padding-block:clamp(26px,3vw,36px)}.chapter .results{margin-top:14px}.hero-cover .cover-img{aspect-ratio:2/1}.case-hero{padding-bottom:28px}.own ul{margin:0}.es-fig{margin:18px 0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}.es-fig img{display:block;width:100%;height:auto}</style>
       <article class="chapter" id="overview"><header><span class="mono">01</span><h2>Context &amp; problem</h2></header>
         <div class="prose">
           <p>I joined in November 2024, when Extra Safe was an idea and a rough draft. Features grew fast: calls, file sharing, a wallet, private balances. <strong>The team could not tell which parts of the app built trust and which quietly broke it</strong>, so there was no clear basis for what to keep, fix or drop.</p>
@@ -72,6 +72,8 @@
 
       <article class="chapter" id="research"><header><span class="mono">03</span><h2>What we found</h2></header>
         <div class="prose">
+          <p>Each session had a short interview and 7 scripted tasks on the live app. Participants ranged from military personnel to doctors and developers.</p>
+          <figure class="es-fig"><img src="es-research-tasks.jpg" alt="Usability test script: Task 1, find Extra Safe in the App Store, and Task 2, onboarding, with hints and questions" loading="lazy" width="1600" height="762"></figure>
           <div class="own">
             <div><span class="mono">Built trust</span><ul>
               <li>10 of 12 passed onboarding without doubts</li>
@@ -83,11 +85,20 @@
               <li>4 would quit over disappearing messages</li>
             </ul></div>
           </div>
+          <figure class="es-fig"><img src="es-research-results.jpg" alt="Synthesis board with sticky notes for Task 3, add a contact, and Task 4, call and write in the chat" loading="lazy" width="1600" height="762"></figure>
         </div></article>
 
       <article class="chapter" id="decisions"><header><span class="mono">04</span><h2>What it led to</h2></header>
         <div class="prose">
-          <p>The founder got a clear direction and 5 proposals: optional disappearing messages, a store page about protection, a real home screen, Meetings separate from Calls, and short plain security messages. In my own work, I rebuilt the website and store screenshots around one message: <strong>“the first messenger built on money rails”</strong>. Today the app has 770K+ downloads and a wallet that sends stablecoins right in a chat.</p>
+          <p>A direction for the founder: a private messenger that needs no phone number, for people whose privacy is critical. And 5 prioritised proposals:</p>
+          <ol>
+            <li>Disappearing messages become an option; chats stay by default</li>
+            <li>An App Store page built around how the app protects people</li>
+            <li>Clearer navigation with a real home screen</li>
+            <li>Meetings separated from Calls, with scheduled meetings</li>
+            <li>Short, plain security messages and language choice in onboarding</li>
+          </ol>
+          <p><strong>The founder accepted all five.</strong> In my own work, I rebuilt the website and store screenshots around one message: “the first messenger built on money rails”. Today the app has 770K+ downloads and a wallet that sends stablecoins right in a chat.</p>
         </div></article>
 
       <article class="chapter" id="learnings"><header><span class="mono">05</span><h2>Next time</h2></header>
